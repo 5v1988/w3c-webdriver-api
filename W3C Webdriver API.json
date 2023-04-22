@@ -1,0 +1,3841 @@
+{
+	"info": {
+		"_postman_id": "9b4ea7cf-1064-4c98-8b1b-9d344d31ba8c",
+		"name": "W3C Webdriver API Collection",
+		"description": "![image](https://opengraph.githubassets.com/fd7f372c18ee57ce39abc33be6a103cdf4c90ae19fbc59c837553d19aee426b9/w3c/webdriver)\n\nThis is a collection of all webdriver w3c api end points. \n\nThanks to **@christian-bromann** from webdriverIO for the swagger page from which this collection was created.\n\n![logo](https://img.stackshare.io/service/4185/webdriver.io.png)\n\nhttps://app.swaggerhub.com/apis-docs/christian-bromann/webdriver/2.0.0\n\nyou can use this collection to learn and play around with the w3c api endpoints\n\nWebDriver is a remote control interface that enables introspection and control of user agents. It provides a platform- and language-neutral wire protocol as a way for out-of-process programs to remotely instruct the behavior of web browsers.\n\nContact Support:\n\n Name: Browser Testing and Tools Working Group\n \nEmail: public-browser-tools-testing@w3.org",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "0",
+		"_collection_link": "https://www.postman.com/praveendvd-public/workspace/webdriver-w3c-apis/collection/8296678-9b4ea7cf-1064-4c98-8b1b-9d344d31ba8c?action=share&creator=0&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "new Session",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstMatch\": {\n        \"browserName\": \"<string>\",\n        \"browserVersion\": \"<string>\",\n        \"platformName\": \"<string>\",\n        \"acceptInsecureCerts\": \"<boolean>\",\n        \"pageLoadStrategy\": \"<string>\",\n        \"proxy\": {\n            \"proxyType\": \"<string>\",\n            \"proxyAutoconfigUrl\": \"<string>\",\n            \"ftpProxy\": \"<string>\",\n            \"httpProxy\": \"<string>\",\n            \"noProxy\": [\n                \"<string>\",\n                \"<string>\"\n            ],\n            \"sslProxy\": \"<string>\",\n            \"socksProxy\": \"<string>\",\n            \"socksVersion\": \"<integer>\"\n        },\n        \"setWindowRect\": \"<boolean>\",\n        \"timeouts\": {\n            \"script\": 30000,\n            \"pageLoad\": 300000,\n            \"implicit\": 0\n        },\n        \"strictFileInteractability\": \"<boolean>\",\n        \"unhandledPromptBehavior\": \"<string>\"\n    },\n    \"alwaysMatch\": {\n        \"browserName\": \"<string>\",\n        \"browserVersion\": \"<string>\",\n        \"platformName\": \"<string>\",\n        \"acceptInsecureCerts\": \"<boolean>\",\n        \"pageLoadStrategy\": \"<string>\",\n        \"proxy\": {\n            \"proxyType\": \"<string>\",\n            \"proxyAutoconfigUrl\": \"<string>\",\n            \"ftpProxy\": \"<string>\",\n            \"httpProxy\": \"<string>\",\n            \"noProxy\": [\n                \"<string>\",\n                \"<string>\"\n            ],\n            \"sslProxy\": \"<string>\",\n            \"socksProxy\": \"<string>\",\n            \"socksVersion\": \"<integer>\"\n        },\n        \"setWindowRect\": \"<boolean>\",\n        \"timeouts\": {\n            \"script\": 30000,\n            \"pageLoad\": 300000,\n            \"implicit\": 0\n        },\n        \"strictFileInteractability\": \"<boolean>\",\n        \"unhandledPromptBehavior\": \"<string>\"\n    }\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Object containing sessionId and capabilities of created WebDriver session.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstMatch\": {\n        \"browserName\": \"<string>\",\n        \"browserVersion\": \"<string>\",\n        \"platformName\": \"<string>\",\n        \"acceptInsecureCerts\": \"<boolean>\",\n        \"pageLoadStrategy\": \"<string>\",\n        \"proxy\": {\n            \"proxyType\": \"<string>\",\n            \"proxyAutoconfigUrl\": \"<string>\",\n            \"ftpProxy\": \"<string>\",\n            \"httpProxy\": \"<string>\",\n            \"noProxy\": [\n                \"<string>\",\n                \"<string>\"\n            ],\n            \"sslProxy\": \"<string>\",\n            \"socksProxy\": \"<string>\",\n            \"socksVersion\": \"<integer>\"\n        },\n        \"setWindowRect\": \"<boolean>\",\n        \"timeouts\": {\n            \"script\": 30000,\n            \"pageLoad\": 300000,\n            \"implicit\": 0\n        },\n        \"strictFileInteractability\": \"<boolean>\",\n        \"unhandledPromptBehavior\": \"<string>\"\n    },\n    \"alwaysMatch\": {\n        \"browserName\": \"<string>\",\n        \"browserVersion\": \"<string>\",\n        \"platformName\": \"<string>\",\n        \"acceptInsecureCerts\": \"<boolean>\",\n        \"pageLoadStrategy\": \"<string>\",\n        \"proxy\": {\n            \"proxyType\": \"<string>\",\n            \"proxyAutoconfigUrl\": \"<string>\",\n            \"ftpProxy\": \"<string>\",\n            \"httpProxy\": \"<string>\",\n            \"noProxy\": [\n                \"<string>\",\n                \"<string>\"\n            ],\n            \"sslProxy\": \"<string>\",\n            \"socksProxy\": \"<string>\",\n            \"socksVersion\": \"<integer>\"\n        },\n        \"setWindowRect\": \"<boolean>\",\n        \"timeouts\": {\n            \"script\": 30000,\n            \"pageLoad\": 300000,\n            \"implicit\": 0\n        },\n        \"strictFileInteractability\": \"<boolean>\",\n        \"unhandledPromptBehavior\": \"<string>\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"browserName\": \"<string>\",\n \"browserVersion\": \"<string>\",\n \"platformName\": \"<string>\",\n \"acceptInsecureCerts\": \"<boolean>\",\n \"pageLoadStrategy\": \"<string>\",\n \"proxy\": {\n  \"proxyType\": \"<string>\",\n  \"proxyAutoconfigUrl\": \"<string>\",\n  \"ftpProxy\": \"<string>\",\n  \"httpProxy\": \"<string>\",\n  \"noProxy\": [\n   \"<string>\",\n   \"<string>\"\n  ],\n  \"sslProxy\": \"<string>\",\n  \"socksProxy\": \"<string>\",\n  \"socksVersion\": \"<integer>\"\n },\n \"setWindowRect\": \"<boolean>\",\n \"timeouts\": {\n  \"script\": 30000,\n  \"pageLoad\": 300000,\n  \"implicit\": 0\n },\n \"strictFileInteractability\": \"<boolean>\",\n \"unhandledPromptBehavior\": \"<string>\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete Session",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/status",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Object containing status of the driver status.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/status",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"ready\": \"quis anim deserunt ut qui\",\n  \"message\": \"est esse sint Excepteur\"\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "get Timeouts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/timeouts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"timeouts"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Object containing timeout durations for `script`, `pageLoad` and `implicit` timeouts.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/timeouts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"timeouts"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"script\": 30000,\n \"pageLoad\": 300000,\n \"implicit\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "set Timeouts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"script\": 30000,\n    \"pageLoad\": 300000,\n    \"implicit\": 0\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/timeouts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"timeouts"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"script\": 30000,\n    \"pageLoad\": 300000,\n    \"implicit\": 0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/timeouts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"timeouts"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get Url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/url",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"url"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Current top-level browsing context�s active document�s document URL",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/url",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"url"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"https://example.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "navigate To",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/url",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"url"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"url\": \"https://example.com\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/url",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"url"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "back",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/back",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"back"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/back",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"back"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "forward",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/forward",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"forward"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/forward",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"forward"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/refresh",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"refresh"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/refresh",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"refresh"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get Title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/title",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"title"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "This command returns the document title of the current top-level browsing context, equivalent to calling document.title.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/title",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"title"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"nulla pariatur\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Window Handle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Returns a string which is the window handle for the current top-level browsing context.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"window-1234-5678-abcd-efgh\"\n}"
+				}
+			]
+		},
+		{
+			"name": "close Window",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "switch To Window",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"handle\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"handle\": \"asdf-1234-jklo-5678\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "create Window",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"handle\": \"<string>\",\n    \"type\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window/new",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window",
+						"new"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New window object containing 'handle' with the value of the handle and 'type' with the value of the created window type",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"handle\": \"asdf-1234-jklo-5678\",\n    \"type\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window/new",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window",
+								"new"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"handle\": \"asdf-1234-jklo-5678\",\n  \"type\": \"<string>\"\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "get Window Handles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window/handles",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window",
+						"handles"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "An array which is a list of window handles.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window/handles",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window",
+								"handles"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": [\n  {\n   \"handle\": \"asdf-1234-jklo-5678\"\n  },\n  {\n   \"handle\": \"asdf-1234-jklo-5678\"\n  }\n ]\n}"
+				}
+			]
+		},
+		{
+			"name": "switch To Frame",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": {}\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/frame",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"frame"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": {}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/frame",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"frame"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "switch To Parent Frame",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/frame/parent",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"frame",
+						"parent"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/frame/parent",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"frame",
+								"parent"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get Window Rect",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window/rect",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window",
+						"rect"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON representation of a \"window rect\" object. This has 4 properties: `x`, `y`, `width` and `height`.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window/rect",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window",
+								"rect"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"x\": 0,\n  \"y\": 23,\n  \"width\": 1280,\n  \"height\": 960\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "set Window Rect",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"x\": \"<integer>\",\n    \"y\": \"<integer>\",\n    \"width\": \"<integer>\",\n    \"height\": \"<integer>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window/rect",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window",
+						"rect"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON representation of a \"window rect\" object based on the new window state.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"x\": 0,\n    \"y\": 23,\n    \"width\": 1280,\n    \"height\": 960\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window/rect",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window",
+								"rect"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"x\": 0,\n  \"y\": 23,\n  \"width\": 1280,\n  \"height\": 960\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "maximize Window",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window/maximize",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window",
+						"maximize"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON representation of a \"window rect\" object based on the new window state.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window/maximize",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window",
+								"maximize"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"x\": 0,\n  \"y\": 23,\n  \"width\": 1280,\n  \"height\": 960\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "minimize Window",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window/minimize",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window",
+						"minimize"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON representation of a \"window rect\" object of the (new) current top-level browsing context.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window/minimize",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window",
+								"minimize"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"x\": 0,\n  \"y\": 23,\n  \"width\": 1280,\n  \"height\": 960\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "fullscreen Window",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/window/fullscreen",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"window",
+						"fullscreen"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON representation of a \"window rect\" object of the (new) current top-level browsing context.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/window/fullscreen",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"window",
+								"fullscreen"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"x\": 0,\n  \"y\": 23,\n  \"width\": 1280,\n  \"height\": 960\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "find Element",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"using\": \"<string>\",\n    \"value\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON representation of an element object.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"using\": \"css selector\",\n    \"value\": \"#foo\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"element-6066-11e4-a52e-4f735466cecf\": \"ELEMENT-1\"\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "find Elements",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"using\": \"<string>\",\n    \"value\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/elements",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"elements"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A (possibly empty) JSON list of representations of an element object.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"using\": \"css selector\",\n    \"value\": \"#foo\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/elements",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"elements"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": [\n  {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"ELEMENT-1\"\n  },\n  {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"ELEMENT-1\"\n  }\n ]\n}"
+				}
+			]
+		},
+		{
+			"name": "find Element From Element",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"using\": \"<string>\",\n    \"value\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/element",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"element"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON representation of an element object.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"using\": \"css selector\",\n    \"value\": \"#foo\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/element",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"element"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"element-6066-11e4-a52e-4f735466cecf\": \"ELEMENT-1\"\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "find Elements From Element",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"using\": \"<string>\",\n    \"value\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/elements",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"elements"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A (possibly empty) JSON list of representations of an element object.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"using\": \"css selector\",\n    \"value\": \"#foo\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/elements",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"elements"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": [\n  {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"ELEMENT-1\"\n  },\n  {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"ELEMENT-1\"\n  }\n ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get Active Element",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/active",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						"active"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON representation of an element object.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/active",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								"active"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"element-6066-11e4-a52e-4f735466cecf\": \"ELEMENT-1\"\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "is Element Selected",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/selected",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"selected"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "`true` or `false` based on the selected state.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/selected",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"selected"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "get Element Attribute",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/attribute/:attributeName",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"attribute",
+						":attributeName"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "attributeName",
+							"value": "<string>",
+							"description": "(Required) name of the attribute value to retrieve"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The named attribute of the element.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/attribute/:attributeName",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"attribute",
+								":attributeName"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								},
+								{
+									"key": "attributeName"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"deserunt enim do\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Element Property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/property/:propertyName",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"property",
+						":propertyName"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "propertyName",
+							"value": "<string>",
+							"description": "(Required) name of the property value to retrieve"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The named property of the element, accessed by calling GetOwnProperty on the element object.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/property/:propertyName",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"property",
+								":propertyName"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								},
+								{
+									"key": "propertyName"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"non adipisicing sint deserunt sunt\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Element CSS Value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/css/:cssPropertyName",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"css",
+						":cssPropertyName"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "cssPropertyName",
+							"value": "<string>",
+							"description": "(Required) name of the css property value to retrieve"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The computed value of the parameter corresponding to property name from the element's style declarations (unless the document type is xml, in which case the return value is simply the empty string).",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/css/:cssPropertyName",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"css",
+								":cssPropertyName"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								},
+								{
+									"key": "cssPropertyName"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"dol\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Element Text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/text",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"text"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The visible text of the element (including child elements), following the algorithm defined in the Selenium Atoms for [`bot.dom.getVisibleText`](https://github.com/SeleniumHQ/selenium/blob/e09e28f016c9f53196cf68d6f71991c5af4a35d4/javascript/atoms/dom.js#L",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/text",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"text"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"nisi adipisicing tempor\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Element Tag Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/name",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"name"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The tagName attribute of the element.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/name",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"name"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"incididunt amet\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Element Rect",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/rect",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"rect"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A JSON object representing the position and bounding rect of the element.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/rect",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"rect"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"x\": 200,\n  \"y\": 300,\n  \"width\": 20,\n  \"height\": 50\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "is Element Enabled",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/enabled",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"enabled"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "If the element is in an xml document, or is a disabled form control: `false`, otherwise, `true`.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/enabled",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"enabled"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "element Click",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/click",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"click"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/click",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"click"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "element Clear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/clear",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"clear"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/clear",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"clear"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "element Send Keys",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/value",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"value"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\": \"hello world\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/value",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"value"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get Page Source",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/source",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"source"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The serialized document source.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/source",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"source"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"<html>...</html>\"\n}"
+				}
+			]
+		},
+		{
+			"name": "execute Script",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"script\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/execute/sync",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"execute",
+						"sync"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Either the return value of your script, the fulfillment of the Promise returned by your script, or the error which was the reason for your script's returned Promise's rejection.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"script\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/execute/sync",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"execute",
+								"sync"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "execute Async Script",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"script\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/execute/async",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"execute",
+						"async"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Either the return value of your script, the fulfillment of the Promise returned by your script, or the error which was the reason for your script's returned Promise's rejection.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"script\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/execute/async",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"execute",
+								"async"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get All Cookies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/cookie",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"cookie"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A list of serialized cookies. Each serialized cookie has a number of optional fields which may or may not be returned in addition to `name` and `value`.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/cookie",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"cookie"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": [\n  {\n   \"name\": \"quis irure dolore Excepteur in\",\n   \"value\": \"Lorem ad rep\",\n   \"path\": \"incididunt cillum elit\",\n   \"domain\": \"sint\",\n   \"secure\": true,\n   \"httpOnly\": false,\n   \"expiry\": false\n  },\n  {\n   \"name\": \"Ut in nulla nostrud\",\n   \"value\": \"in ullamco dolor cupidatat\",\n   \"path\": \"nulla Lorem eu\",\n   \"domain\": \"tempor Ut\",\n   \"secure\": true,\n   \"httpOnly\": true,\n   \"expiry\": false\n  }\n ]\n}"
+				}
+			]
+		},
+		{
+			"name": "add Cookie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"<string>\",\n    \"value\": \"<string>\",\n    \"path\": \"<string>\",\n    \"domain\": \"<string>\",\n    \"secure\": \"<boolean>\",\n    \"httpOnly\": \"<boolean>\",\n    \"expiry\": \"<boolean>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/cookie",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"cookie"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"<string>\",\n    \"value\": \"<string>\",\n    \"path\": \"<string>\",\n    \"domain\": \"<string>\",\n    \"secure\": \"<boolean>\",\n    \"httpOnly\": \"<boolean>\",\n    \"expiry\": \"<boolean>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/cookie",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"cookie"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "delete All Cookies",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/cookie",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"cookie"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/cookie",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"cookie"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get Named Cookie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/cookie/:cookieName",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"cookie",
+						":cookieName"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "cookieName",
+							"value": "<string>",
+							"description": "(Required) name of the cookie to retrieve"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "A serialized cookie, with name and value fields. There are a number of optional fields like `path`, `domain`, and `expiry-time` which may also be present.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/cookie/:cookieName",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"cookie",
+								":cookieName"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "cookieName"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {\n  \"name\": \"<string>\",\n  \"value\": \"<string>\",\n  \"path\": \"<string>\",\n  \"domain\": \"<string>\",\n  \"secure\": \"<boolean>\",\n  \"httpOnly\": \"<boolean>\",\n  \"expiry\": \"<boolean>\"\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete Cookie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/cookie/:cookieName",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"cookie",
+						":cookieName"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "cookieName",
+							"value": "<string>",
+							"description": "(Required) name of the cookie to retrieve"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/cookie/:cookieName",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"cookie",
+								":cookieName"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "cookieName"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "perform Actions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"<string>\",\n    \"id\": \"<string>\",\n    \"actions\": [\n        {\n            \"type\": \"<string>\",\n            \"duration\": \"<integer>\",\n            \"origin\": \"<string>\",\n            \"x\": \"<integer>\",\n            \"y\": \"<integer>\"\n        },\n        {\n            \"type\": \"<string>\",\n            \"duration\": \"<integer>\",\n            \"origin\": \"<string>\",\n            \"x\": \"<integer>\",\n            \"y\": \"<integer>\"\n        }\n    ],\n    \"parameters\": {\n        \"pointerType\": \"<string>\"\n    }\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/actions",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"actions"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"<string>\",\n    \"id\": \"<string>\",\n    \"actions\": [\n        {\n            \"type\": \"pointerMove\",\n            \"duration\": 0,\n            \"x\": 100,\n            \"y\": 100\n        },\n        {\n            \"type\": \"pointerMove\",\n            \"duration\": 0,\n            \"x\": 100,\n            \"y\": 100\n        }\n    ],\n    \"parameters\": {\n        \"pointerType\": \"<string>\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/actions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"actions"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "release Actions",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/actions",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"actions"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/actions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"actions"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "dismiss Alert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/alert/dismiss",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"alert",
+						"dismiss"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/alert/dismiss",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"alert",
+								"dismiss"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "accept Alert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/alert/accept",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"alert",
+						"accept"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/alert/accept",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"alert",
+								"accept"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get Alert Text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/alert/text",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"alert",
+						"text"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The message of the user prompt.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/alert/text",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"alert",
+								"text"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"dolor ut eius\"\n}"
+				}
+			]
+		},
+		{
+			"name": "send Alert Text",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/alert/text",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"alert",
+						"text"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "empty response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\": \"My prompt response\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/alert/text",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"alert",
+								"text"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "take Screenshot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/screenshot",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"screenshot"
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The base64-encoded PNG image data comprising the screenshot of the initial viewport.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/screenshot",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"screenshot"
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"iVBORw0KGgoAAAANSUhEUgAAARMAAAFBC...\"\n}"
+				}
+			]
+		},
+		{
+			"name": "take Element Screenshot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/screenshot?scroll=<boolean>",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session",
+						":sessionId",
+						"element",
+						":elementId",
+						"screenshot"
+					],
+					"query": [
+						{
+							"key": "scroll",
+							"value": "<boolean>",
+							"description": "scroll into view the element. Default: true"
+						}
+					],
+					"variable": [
+						{
+							"key": "sessionId",
+							"value": "<string>",
+							"description": "(Required) "
+						},
+						{
+							"key": "elementId",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The base64-encoded PNG image data comprising the screenshot of the visible region of an element�s bounding rectangle after it has been scrolled into view.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/session/:sessionId/element/:elementId/screenshot?scroll=<boolean>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session",
+								":sessionId",
+								"element",
+								":elementId",
+								"screenshot"
+							],
+							"query": [
+								{
+									"key": "scroll",
+									"value": "<boolean>"
+								}
+							],
+							"variable": [
+								{
+									"key": "sessionId"
+								},
+								{
+									"key": "elementId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"value\": \"iVBORw0KGgoAAAANSUhEUgAAARMAAAFBC...\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:9515"
+		}
+	]
+}
